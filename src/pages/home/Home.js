@@ -114,6 +114,10 @@ class HomePage extends Component {
 	  }
 	`
 
+	const Padding = styled.div`
+	  padding: 20px 0 0 0;
+	`
+
     return (
       <HomePage>
 		<Hero
@@ -134,19 +138,24 @@ class HomePage extends Component {
 					<Information>
 						<SmallLogo />
 						<h2>Address:</h2>
-						<p>2615 Park Ave b6, Minneapolis, MN 55407</p>
+						<p>212 3rd St NW, Bemidji, MN 56601</p>
 						<h2>Hours:</h2>
 						<ul>
 							<li>Sunday - Closed</li>
-							<li>Monday - Closed</li>
-							<li>Tuesday - Closed</li>
-							<li>Wednesday - Closed</li>
-							<li>Thursday - Closed</li>
-							<li>Friday - Closed</li>
-							<li>Saturday - 8am to 3pm</li>
+							<li>Monday - 8am to 5:30pm</li>
+							<li>Tuesday - 8am to 5:30pm</li>
+							<li>Wednesday - 8am to 5:30pm</li>
+							<li>Thursday - 8am to 5:30pm</li>
+							<li>Friday - 8am to 5:30pm</li>
+							<li>Saturday - Closed</li>
 						</ul>
 						<h2>Phone:</h2>
-						<a href="tel:+16128792615">(612) 879-2615</a>
+						<a href="tel:+12187518313">(218) 751-8313</a>
+						<h2>Email:</h2>
+						<a href="mailto:info@thirdstreetoptical.info">info@thirdstreetoptical.info</a>
+						<Padding>
+							<div class="fb-like" data-href="https://www.facebook.com/thirdstreetoptical/" data-layout="standard" data-width="280px" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+						</Padding>
 					</Information>
 				</Center>
 				<Map />

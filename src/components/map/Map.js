@@ -7,10 +7,10 @@ import Marker from "./Marker"
 class Map extends Component {
   static defaultProps = {
     center: {
-      lat: 44.956086,
-      lng: -93.26444
+      lat: 47.4703406,
+      lng: -94.8842123
     },
-	zoom: 15,
+	zoom: 17,
 	options: {
 		styles: [
 			{
@@ -198,8 +198,8 @@ class Map extends Component {
 		  options={this.props.options}
         >
           <Marker
-            lat={44.956086}
-            lng={-93.26444}
+            lat={47.4705}
+            lng={-94.8837}
           />
         </GoogleMapReact>
       </Map>

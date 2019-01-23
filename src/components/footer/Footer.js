@@ -104,13 +104,13 @@ class Footer extends Component {
           <Flex>
             <SocialList>
               <li>
-                <SocialIcon icon='facebook' url="https://www.facebook.com"/>
+                <SocialIcon icon='facebook' url="https://www.facebook.com/thirdstreetoptical/?ref=br_rs"/>
               </li>
               <li>
-                <SocialIcon icon='linkedin' url="https://www.linkedin.com"/>
+                <SocialIcon icon='linkedin' url="https://www.linkedin.com/in/james-hess-2759773/"/>
               </li>
               <li>
-                <SocialIcon icon='googleplus' url="https://www.google.com"/>
+                <SocialIcon icon='googleplus' url="https://www.google.com/search?q=third+street+optical&oq=third+street+optical&aqs=chrome..69i57j69i61j69i60l2j0l2.2477j0j4&sourceid=chrome&ie=UTF-8"/>
               </li>
             </SocialList>
             <Links>
@@ -118,7 +118,7 @@ class Footer extends Component {
               <li onClick={() => this.scrollTo(2)}>Schedule Appointment</li>
             </Links>
             <Text>
-              © 2019 all rights reserved <Highlight>26ParkBarber</Highlight>
+              © 2019 all rights reserved <Highlight>Third Street Optical</Highlight>
             </Text>
           </Flex>
         </Container>
