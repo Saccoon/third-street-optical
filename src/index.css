@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-family: "Arimo", sans-serif;
+  width: 100%;
+  background-color: #241f20;
+}
+
+@font-face {
+	font-family: Valentine;
+	src: url("constants/Valentine_Love.ttf");
+}

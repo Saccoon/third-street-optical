@@ -1,0 +1,96 @@
+.Social.SocialButton {
+    padding: 5px 10px;
+    border: 1px solid;
+    background: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.Social.SocialButton.Twitter {
+    border-color: #55ACEE;
+    color: #55ACEE;
+}
+
+.Social.SocialButton.Facebook {
+    border-color: #3A559F;
+    color: #3A559F;
+}
+
+.Social.SocialButton.Twitter.Solid {
+    background: #55ACEE;
+    color: white;
+}
+
+.Social.SocialButton.Facebook.Solid {
+    background: #3A559F;
+    color: white;
+}
+
+.Social.SocialButton.Twitter:hover {
+    animation-fill-mode:forwards;
+    animation-name: TwitterButtonHover;
+    animation-duration: 1s;
+}
+
+.Social.SocialButton.Facebook:hover {
+    animation-fill-mode:forwards;
+    animation-name: FacebookButtonHover;
+    animation-duration: 1s;
+}
+
+.Social.SocialButton.Twitter.Solid:hover {
+    animation-fill-mode:forwards;
+    animation-name: TwitterButtonSolidHover;
+    animation-duration: 1s;
+}
+
+.Social.SocialButton.Facebook.Solid:hover {
+    animation-fill-mode:forwards;
+    animation-name: FacebookButtonSolidHover;
+    animation-duration: 1s;
+}
+
+@keyframes TwitterButtonHover {
+    from {
+        background: none;
+        color: #55ACEE;
+    }
+    to {
+        background: #55ACEE;
+        color: white;
+    }
+}
+@keyframes FacebookButtonHover {
+    from {
+        background: none;
+        color: #3A559F;
+    }
+    to {
+        background: #3A559F;
+        color: white;
+    }
+}
+
+@keyframes TwitterButtonSolidHover {
+    from {
+        background: #55ACEE;
+        color: white;
+    }
+    to {
+        background: #55ACEE;
+        color: black;
+    }
+}
+
+@keyframes FacebookButtonSolidHover {
+    from {
+        background: #3A559F;
+        color: white;
+    }
+    to {
+        background: #3A559F;
+        color: black;
+    }
+}
