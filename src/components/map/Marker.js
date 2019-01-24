@@ -3,13 +3,8 @@ import styled from 'styled-components'
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faMapMarker } from '@fortawesome/fontawesome-free-solid'
-import SmallLogo from "../logo/SmallLogo"
  
 class Marker extends Component {
-
-  constructor(props) {
-    super(props)
-  }
  
   render() {
 	

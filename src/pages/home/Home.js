@@ -12,8 +12,10 @@ import Logo from '../../components/logo/Logo'
 import SmallLogo from "../../components/logo/SmallLogo"
 
 // Assets \\
-import Background from './Background.jpg'
-import Left1 from './Left1.jpg'
+import Background1 from './Background_1.jpeg'
+import Background2 from './Background_2.jpg'
+import Background3 from './Background_3.jpeg'
+import Background4 from './Background_4.jpg'
 
 class HomePage extends Component {
 
@@ -121,7 +123,7 @@ class HomePage extends Component {
     return (
       <HomePage>
 		<Hero
-          image={Background}
+          images={[Background1, Background2, Background3]}
           title={<Logo />}>
 		  <NavList>
 			<li onClick={() => this.scrollTo(1)}>
@@ -154,7 +156,7 @@ class HomePage extends Component {
 						<h2>Email:</h2>
 						<a href="mailto:info@thirdstreetoptical.info">info@thirdstreetoptical.info</a>
 						<Padding>
-							<div class="fb-like" data-href="https://www.facebook.com/thirdstreetoptical/" data-layout="standard" data-width="280px" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+							<div className="fb-like" data-href="https://www.facebook.com/thirdstreetoptical/" data-layout="standard" data-width="280px" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 						</Padding>
 					</Information>
 				</Center>
@@ -163,7 +165,7 @@ class HomePage extends Component {
 		</Content>
 		<Content>
 			<Hero
-				image={Left1}
+				images={[Background4]}
 				color="143, 178, 216,"
 				title={<h1>Schedule an Appointment</h1>}>
 				<ContactForm />

@@ -18,7 +18,7 @@ class SmallLogo extends Component {
 
     return (
 		<Logo>
-			<img src={LogoImage} />
+			<img alt="Small Logo" src={LogoImage} />
 		</Logo>
     )
   }

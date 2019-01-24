@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {string, node} from 'prop-types'
+import {string, node, array} from 'prop-types'
 import styled from 'styled-components'
 import Shade from '../shade/Shade'
 import Container from '../container/Container'
@@ -8,7 +8,7 @@ class Hero extends Component {
 
   static propTypes = {
     /** image to put in the background of the hero **/
-    image: string.isRequired,
+    images: array.isRequired,
     /** title of the hero */
     title: node,
     /** Status text to pass in */
@@ -18,16 +18,48 @@ class Hero extends Component {
   }
 
   static defaultProps = {
-	  color: "91,111,168,"
+	color: "91,111,168,"
+  }
+
+  constructor(props) {
+	super(props)
+	
+	this.state = {
+		currentImage: props.images[0],
+		currentImageCount: 0
+	}
+  }
+
+  componentWillMount = () => {
+	this.imageSwitcher()
+  }
+
+  imageSwitcher = () => {
+	const { images } = this.props
+	const { currentImageCount } = this.state
+	const maxImageCount = images.length - 1
+	this.setState(prevState => ({
+		currentImage: images[currentImageCount],
+		currentImageCount: prevState.currentImageCount + 1
+	}))
+	if (currentImageCount === maxImageCount) {
+		this.setState({
+			currentImageCount: 0
+		})
+	}
+	setTimeout(() =>{ 
+		this.imageSwitcher()
+	}, 4000)
   }
 
   render() {
 
-    const {image, title, children, color} = this.props
+	const { title, children, color } = this.props
+	const { currentImage } = this.state
 
 	const Hero = styled.figure`
       background-color: #F7F6F6;
-      background-image: url(${image});
+      background-image: url(${currentImage});
       color: #F7F6F6;
 	  width: 100%;
       margin: 0;
