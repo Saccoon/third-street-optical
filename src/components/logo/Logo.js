@@ -11,6 +11,12 @@ class Logo extends Component {
 		padding: 0;
 		margin-bottom: 20px;
 		text-align: center;
+		img {
+			height: 100px;
+			@media only screen and (min-width: 1024px) {
+				height: auto;
+			}
+		}
 	`
 
     return (

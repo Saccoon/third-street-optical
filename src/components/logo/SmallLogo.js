@@ -12,7 +12,10 @@ class SmallLogo extends Component {
 		margin-bottom: 20px;
 		text-align: center;
 		img {
-			width: 200px;
+			width: 125px;
+			@media only screen and (min-width: 1024px) {
+				width: 200px;
+			}
 		}
 	`
 
