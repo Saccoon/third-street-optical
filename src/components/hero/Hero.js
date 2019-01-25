@@ -48,7 +48,9 @@ class Hero extends Component {
 		})
 	}
 	setTimeout(() =>{ 
-		this.imageSwitcher()
+		if (images.length > 1) {
+			this.imageSwitcher()
+		}
 	}, 4000)
   }
 
