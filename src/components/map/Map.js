@@ -184,9 +184,12 @@ class Map extends Component {
  
   render() {
     const Map = styled.div`
-        height: 100%;
+		height: 100vh;
 		width: 100%;
 		position: relative;
+		@media only screen and (min-width: 1024px) {
+			height: 100%;
+		}
 	`
     return (
       // Important! Always set the container height explicitly

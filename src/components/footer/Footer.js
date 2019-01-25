@@ -39,9 +39,12 @@ class Footer extends Component {
     `
 
     const Flex = styled.div`
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+		display: grid;
+		justify-content: space-evenly;
+		align-items: center;
+	  	@media only screen and (min-width: 1024px) {
+			display: flex;
+		}
     `
 
     const SocialList = styled.ul`

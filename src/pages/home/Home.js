@@ -32,14 +32,19 @@ class HomePage extends Component {
 	`
 	
 	const Content = styled.div`
-		height: 100vh;
+		@media only screen and (min-width: 1024px) {
+			height: 100vh;
+		}
 		width: 100%;
 	`
 
 	const Grid = styled.div`
 		display: grid;
-		grid-template-columns: 35% 65%;
-		height: 100%;
+		grid-template-columns: 100%;
+		@media only screen and (min-width: 1024px) {
+			height: 100%;
+			grid-template-columns: 35% 65%;
+		}
 	`
 
 	const EnlargeText = keyframes`
