@@ -149,17 +149,17 @@ class HomePage extends Component {
 						<h2>Hours:</h2>
 						<ul>
 							<li>Sunday - Closed</li>
-							<li>Monday - 8am to 5:30pm</li>
-							<li>Tuesday - 8am to 5:30pm</li>
-							<li>Wednesday - 8am to 5:30pm</li>
-							<li>Thursday - 8am to 5:30pm</li>
-							<li>Friday - 8am to 5:30pm</li>
+							<li>Monday - 8am to 5:00pm</li>
+							<li>Tuesday - 8am to 5:00pm</li>
+							<li>Wednesday - 8am to 5:00pm</li>
+							<li>Thursday - 8am to 5:00pm</li>
+							<li>Friday - 8am to 5:00pm</li>
 							<li>Saturday - Closed</li>
 						</ul>
 						<h2>Phone:</h2>
 						<a href="tel:+12187518313">(218) 751-8313</a>
 						<h2>Email:</h2>
-						<a href="mailto:info@thirdstreetoptical.info">info@thirdstreetoptical.info</a>
+						<a href="mailto:amsmith@paulbunyan.net">amsmith@paulbunyan.net</a>
 						<Padding>
 							<div className="fb-like" data-href="https://www.facebook.com/thirdstreetoptical/" data-layout="standard" data-width="280px" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 						</Padding>
