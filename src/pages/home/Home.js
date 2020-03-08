@@ -159,7 +159,7 @@ class HomePage extends Component {
 						<h2>Phone:</h2>
 						<a href="tel:+12187518313">(218) 751-8313</a>
 						<h2>Email:</h2>
-						<a href="mailto:amsmith@paulbunyan.net">amsmith@paulbunyan.net</a>
+						<a href="mailto:thirdsto@paulbunyan.net">thirdsto@paulbunyan.net</a>
 						<Padding>
 							<div className="fb-like" data-href="https://www.facebook.com/thirdstreetoptical/" data-layout="standard" data-width="280px" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 						</Padding>
