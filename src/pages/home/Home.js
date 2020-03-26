@@ -19,6 +19,11 @@ import Background4 from './Background_4.jpg'
 
 class HomePage extends Component {
 
+	constructor(props) {
+		super(props)
+		this.state = { popup: true }
+	}
+
 	scrollTo = screens => {
 		window.scrollTo({
 			top: screens * window.innerHeight,
@@ -27,6 +32,8 @@ class HomePage extends Component {
 	}
 
   render() {
+
+	const { popup } = this.state
 
     const HomePage = styled.section`
 	`
@@ -125,18 +132,81 @@ class HomePage extends Component {
 	  padding: 20px 0 0 0;
 	`
 
+	const Covid19 = styled.div`
+	  position: fixed;
+	  height: 100%;
+	  width: 100%;
+	  top: 0;
+	  left: 0;
+	  background: rgba(0,0,0,.5);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	`
+
+	const Info = styled.div`
+		position: relative;
+	  width: 768px;
+	  background: rgba(255,255,255,.85);
+	  border-radius: 15px;
+	  padding: 40px;
+	  z-index: 5;
+	  h1 {
+		  font-size: 30px;
+	  }
+	  p {
+		  font-size: 20px;
+		  line-height: 28px;
+	  }
+	`
+
+	const Close = styled.div`
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  padding: 20px;
+	  font-size: 40px;
+	  cursor: pointer;
+	  &:hover {
+		color: crimson;
+	  }
+	`
+
     return (
       <HomePage>
+		{popup && <Covid19>
+				<Info>
+					<Close onClick={() => this.setState({popup: false})}>X</Close>
+					<h1>
+						Covid-19 Information
+					</h1>
+					<p>
+						The Covid-19 pandemic is affecting all our lives in many unforeseen ways. 
+						Out of a sense of responsibility for the safety of our staff, customers, community 
+						and family, Third Street Optical has made the difficult decision to temporarily close 
+						our doors until April 6th to all patients.
+					</p>
+					<p>
+						We will take payments over the phone and are happy to set up an appointment for 
+						pickup between 11:00 am - 01:00 pm.
+					</p>
+					<p>
+						Thank you for your patronage and understanding during this difficult time. 
+						Please be safe and we will see you April 6th.
+					</p>
+				</Info>
+			</Covid19>
+  		}
 		<Hero
-          images={[Background1, Background2, Background3]}
+          images={[Background2]}
           title={<Logo />}>
 		  <NavList>
 			<li onClick={() => this.scrollTo(1)}>
 				Information
 			</li>
-			<li onClick={() => this.scrollTo(2)}>
+			{/* <li onClick={() => this.scrollTo(2)}>
 				Schedule Appointment
-			</li>
+			</li> */}
 		  </NavList>
 		</Hero>
 		<Content>
@@ -168,14 +238,14 @@ class HomePage extends Component {
 				<Map />
 			</Grid>
 		</Content>
-		<Content>
+		{/* <Content>
 			<Hero
 				images={[Background4]}
 				color="143, 178, 216,"
 				title={<h1>Schedule an Appointment</h1>}>
 				<ContactForm />
 			</Hero>
-		</Content>
+		</Content> */}
       </HomePage>
     )
   }

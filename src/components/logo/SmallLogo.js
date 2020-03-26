@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import LogoImage from "./logo.png"
+import LogoImage from "./Logo.png"
 
 class SmallLogo extends Component {
 
