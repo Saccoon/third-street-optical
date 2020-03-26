@@ -142,6 +142,7 @@ class HomePage extends Component {
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+	  z-index: 5;
 	`
 
 	const Info = styled.div`
@@ -150,7 +151,6 @@ class HomePage extends Component {
 	  background: rgba(255,255,255,.85);
 	  border-radius: 15px;
 	  padding: 40px;
-	  z-index: 5;
 	  h1 {
 		  font-size: 30px;
 	  }
