@@ -184,7 +184,7 @@ class HomePage extends Component {
 						The Covid-19 pandemic is affecting all our lives in many unforeseen ways. 
 						Out of a sense of responsibility for the safety of our staff, customers, community 
 						and family, Third Street Optical has made the difficult decision to temporarily close 
-						our doors until April 6th to all patients.
+						our doors until May 4th to all patients.
 					</p>
 					<p>
 						We will take payments over the phone and are happy to set up an appointment for 
