@@ -192,7 +192,7 @@ class HomePage extends Component {
 					</p>
 					<p>
 						Thank you for your patronage and understanding during this difficult time. 
-						Please be safe and we will see you April 6th.
+						Please be safe and we will see you May 4th.
 					</p>
 				</Info>
 			</Covid19>
