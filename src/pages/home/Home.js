@@ -174,7 +174,7 @@ class HomePage extends Component {
 
     return (
       <HomePage>
-		{popup && <Covid19>
+		{/* {popup && <Covid19>
 				<Info>
 					<Close onClick={() => this.setState({popup: false})}>X</Close>
 					<h1>
@@ -196,7 +196,7 @@ class HomePage extends Component {
 					</p>
 				</Info>
 			</Covid19>
-  		}
+  		} */}
 		<Hero
           images={[Background2]}
           title={<Logo />}>

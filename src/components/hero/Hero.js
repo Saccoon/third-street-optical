@@ -18,7 +18,7 @@ class Hero extends Component {
   }
 
   static defaultProps = {
-	color: "91,111,168,"
+	color: "0,0,0,"
   }
 
   constructor(props) {
